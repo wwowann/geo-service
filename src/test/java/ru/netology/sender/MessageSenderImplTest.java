@@ -22,8 +22,8 @@ public class MessageSenderImplTest {
 
     @BeforeEach
     void preinstallation() {
-        Mockito.when(geoService.byIp(Mockito.any(String.class))).thenReturn(new Location("Москва", Country.RUSSIA,
-                null, 0));
+//        Mockito.when(geoService.byIp(Mockito.any(String.class))).thenReturn(new Location("Москва", Country.RUSSIA,
+//                null, 0));
         Mockito.when(localizationService.locale(Mockito.<Country>any()))
                 .thenReturn("Добро пожаловать");
         Mockito.when(geoService.byIp(Mockito.<String>any()))
